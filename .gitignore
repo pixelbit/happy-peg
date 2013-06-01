@@ -10,4 +10,5 @@
 *.perspectivev3
 *.pbxuser
 *.xcodeproj/project.xcworkspace/xcuserdata/
-UserInterfaceState.xcuserstate
+*/UserInterfaceState.xcuserstate
+*/HappyPeg.xcodeproj/project.xcworkspace/xcuserdata/*.xcuserdatad/UserInterfaceState.xcuserstate
