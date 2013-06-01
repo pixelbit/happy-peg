@@ -20,6 +20,7 @@
 		07AFBA6917599B8A00ED52F3 /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 07AFBA6717599B8A00ED52F3 /* ViewController.xib */; };
 		07AFBA7617599CF600ED52F3 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 07AFBA7517599CF600ED52F3 /* Default.png */; };
 		07AFBA7817599D0500ED52F3 /* 57x57.png in Resources */ = {isa = PBXBuildFile; fileRef = 07AFBA7717599D0500ED52F3 /* 57x57.png */; };
+		07AFBA7A1759A7E600ED52F3 /* FacebookSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 07AFBA791759A7E600ED52F3 /* FacebookSDK.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -41,6 +42,7 @@
 		07AFBA6817599B8A00ED52F3 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewController.xib; sourceTree = "<group>"; };
 		07AFBA7517599CF600ED52F3 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
 		07AFBA7717599D0500ED52F3 /* 57x57.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 57x57.png; sourceTree = "<group>"; };
+		07AFBA791759A7E600ED52F3 /* FacebookSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FacebookSDK.framework; path = HappyPeg/FacebookSDK.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +53,7 @@
 				07AFBA4D17599B8A00ED52F3 /* UIKit.framework in Frameworks */,
 				07AFBA4F17599B8A00ED52F3 /* Foundation.framework in Frameworks */,
 				07AFBA5117599B8A00ED52F3 /* CoreGraphics.framework in Frameworks */,
+				07AFBA7A1759A7E600ED52F3 /* FacebookSDK.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -79,6 +82,7 @@
 		07AFBA4B17599B8A00ED52F3 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				07AFBA791759A7E600ED52F3 /* FacebookSDK.framework */,
 				07AFBA4C17599B8A00ED52F3 /* UIKit.framework */,
 				07AFBA4E17599B8A00ED52F3 /* Foundation.framework */,
 				07AFBA5017599B8A00ED52F3 /* CoreGraphics.framework */,
@@ -268,6 +272,10 @@
 		07AFBA6D17599B8A00ED52F3 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(LOCAL_LIBRARY_DIR)/WebServer/Documents/clients/pixelbit/clients/pixelbit/happypeg-ios/src/HappyPeg/HappyPeg\"",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "HappyPeg/HappyPeg-Prefix.pch";
 				INFOPLIST_FILE = "HappyPeg/HappyPeg-Info.plist";
@@ -280,6 +288,10 @@
 		07AFBA6E17599B8A00ED52F3 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(LOCAL_LIBRARY_DIR)/WebServer/Documents/clients/pixelbit/clients/pixelbit/happypeg-ios/src/HappyPeg/HappyPeg\"",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "HappyPeg/HappyPeg-Prefix.pch";
 				INFOPLIST_FILE = "HappyPeg/HappyPeg-Info.plist";
