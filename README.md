@@ -11,10 +11,12 @@ If you'd like to contribute please send me a note or request access.
 
 ### Legal Info
 
-//
-//  Happy Peg
-//  by Matthew Keefe on 5/31/13.
-//  Copyright (c) 2013 PixelBit. Some Rights Reserved
-//
+////////////
+
+Happy Peg
+by Matthew Keefe on 5/31/13.
+Copyright (c) 2013 PixelBit. Some Rights Reserved
+
+////////////
 
 Please Feel free to fork, modify and have fun :)
