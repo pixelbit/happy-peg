@@ -11,7 +11,8 @@
 @implementation GameManager
 
 - (NSString *)getAppVersion {
-    return [NSString stringWithFormat:@"Version %@",[[NSBundle mainBundle] objectForInfoDictionaryKey:@"CFBundleShortVersionString"]];
+    return [NSString stringWithFormat:@"Version %@",
+            [[NSBundle mainBundle] objectForInfoDictionaryKey:@"CFBundleShortVersionString"]];
 }
 
 + (id)sharedManager {

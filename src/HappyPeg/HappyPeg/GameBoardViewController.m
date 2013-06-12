@@ -27,8 +27,47 @@
     // Do any additional setup after loading the view from its nib.
 }
 
+#pragma mark --
+#pragma mark Game methods
+
+- (void)startGame {
+    
+}
+
+- (void)stopGame {
+    
+}
+
+- (void)resetGame {
+    
+}
+
+- (void)buildGameBoard {
+    
+}
+
+- (void)showHint {
+    
+}
+
+- (void)pickRandomMove {
+    
+}
+
 - (IBAction)back:(id)sender {
     [self.navigationController popViewControllerAnimated:YES];
+}
+
+- (IBAction)resetHandler:(id)sender {
+    [self resetGame];
+}
+
+- (IBAction)randomHandler:(id)sender {
+    [self pickRandomMove];
+}
+
+- (IBAction)hintHandler:(id)sender {
+    [self showHint];
 }
 
 - (void)didReceiveMemoryWarning {
