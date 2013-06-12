@@ -7,7 +7,6 @@
 //
 
 #import "AppDelegate.h"
-#import "ViewController.h"
 #import <Crashlytics/Crashlytics.h>
 
 @implementation AppDelegate
@@ -16,9 +15,14 @@
     [Crashlytics startWithAPIKey:@"8c48fc6a18596e8c5ba7a3d13fc8cd5b29d38b12"];
     
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
-    // Override point for customization after application launch.
-    self.viewController = [[ViewController alloc] initWithNibName:@"ViewController" bundle:nil];
-    self.window.rootViewController = self.viewController;
+    
+    MainMenuViewController *mainMenu = [[MainMenuViewController alloc]
+                                        initWithNibName:@"MainMenuViewController" bundle:nil];
+    
+    UINavigationController *navigationController = [[UINavigationController alloc] initWithRootViewController:mainMenu];
+    navigationController.navigationBar.hidden = YES;
+    self.window.rootViewController = navigationController;
+
     [self.window makeKeyAndVisible];
     return YES;
 }
